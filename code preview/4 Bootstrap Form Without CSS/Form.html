@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Form</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+	<div class="col-lg-12 text-left" id="mainContent" action=" " method="post">
+      
+		<form id="testForm" onsubmit="return checkForFirstName();">
+		<fieldset>
+		<legend>Form</legend>
+			<div class="form-group">			
+				<label for="inputName control-label">First Name</label>
+				<input name="firstName" id="firstNameField" class="form-control" type="text" placeholder="Your First Name" required>	
+			</div>
+			<div class="form-group">			
+				<label for="inputSurname">Last Name</label>
+				<input class="form-control" type="text" id="inputLastName" placeholder="Your Last Name" required>
+				<div class="invalid-feedback">Last Name Required</div>
+			</div>
+			<div class="form-group">			
+				<label for="inputDOB">Date of Birth</label>
+				<input class="form-control" type="date" id="inputDOB" required>			
+			</div>
+			<div class="form-group">
+				<label for="inputEmail">Email</label>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-envelope"></span>
+					</span>
+					<input class="form-control" type="email" id="inputEmail" placeholder="Email address" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputGender">Gender</label>
+					<br />
+				<label class="radio-inline"><input type="radio" name="radioGroup"value="male">Male</label>
+				<label class="radio-inline"><input type="radio" name="radioGroup" value="female"> Female</label>
+				<label class="radio-inline"><input type="radio" name="radioGroup" value="unspecified"> Unspecified</label>	
+			</div>
+			<div class="form-group">
+				<label for="inputChildrenNum">Number of Children</label>
+				<input class="form-control" type="number" id="inputChildrenNum" placeholder="How many children do you have?"/>
+			</div>	
+				<button type="submit" class="btn btn-primary" value="Submit Form">Submit <span class="glyphicon glyphicon-send"></span></button>
+		</fieldset>
+		</form>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+	</html>	
